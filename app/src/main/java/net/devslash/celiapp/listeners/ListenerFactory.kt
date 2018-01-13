@@ -1,12 +1,12 @@
 package net.devslash.celiapp.listeners
 
-import android.support.design.widget.Snackbar
 import android.view.View
+import android.widget.Toast
 
 object ListenerFactory {
-    fun showCameraListener(layout: View) : View.OnClickListener {
+    fun showCameraListener(): View.OnClickListener {
         return View.OnClickListener { view ->
-            Snackbar.make(layout, "Hi there", Snackbar.LENGTH_LONG).show()
+            Toast.makeText(view.context, "Hi there", Toast.LENGTH_LONG).show()
         }
     }
 }
