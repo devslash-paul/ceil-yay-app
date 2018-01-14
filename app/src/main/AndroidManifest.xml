@@ -4,6 +4,7 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -14,14 +15,14 @@
         android:theme="@style/AppTheme"
         android:name=".App" >
 
-        <activity android:name=".MainActivity" >
+        <activity android:name=".ui.main.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".barcode.activities.BarcodeActivity"/>
+        <activity android:name=".ui.barcode.BarcodeActivity"/>
     </application>
 
 </manifest>

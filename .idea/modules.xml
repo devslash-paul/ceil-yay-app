@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/caleiapp.iml" filepath="$PROJECT_DIR$/caleiapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ceil-yay-app.iml" filepath="$PROJECT_DIR$/ceil-yay-app.iml" />
     </modules>
   </component>
 </project>

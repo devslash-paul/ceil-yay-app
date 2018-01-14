@@ -1,4 +1,4 @@
-package net.devslash.celiapp.barcode.activities
+package net.devslash.celiapp.ui.barcode
 
 import android.Manifest
 import android.annotation.SuppressLint

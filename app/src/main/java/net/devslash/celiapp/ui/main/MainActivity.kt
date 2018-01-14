@@ -1,18 +1,23 @@
-package net.devslash.celiapp
+package net.devslash.celiapp.ui.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Button
-import net.devslash.celiapp.barcode.activities.BarcodeActivity
+import dagger.android.AndroidInjection
+import net.devslash.celiapp.R
+import net.devslash.celiapp.SingletonUtil
+import net.devslash.celiapp.ui.barcode.BarcodeActivity
 import javax.inject.Inject
 
-class MainActivity : BaseActivity() {
+class MainActivity : AppCompatActivity() {
 
     @Inject
     lateinit var singleUtil: SingletonUtil
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState)
         Log.w("HEY", singleUtil.doSomething())
         setContentView(R.layout.activity_main)
