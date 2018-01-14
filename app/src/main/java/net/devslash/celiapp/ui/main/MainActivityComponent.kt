@@ -3,7 +3,7 @@ package net.devslash.celiapp.ui.main
 import dagger.Subcomponent
 import dagger.android.AndroidInjector
 
-@Subcomponent(modules=arrayOf(MainActivityModule::class))
+@Subcomponent(modules=[MainActivityModule::class])
 interface MainActivityComponent: AndroidInjector<MainActivity> {
 
     @Subcomponent.Builder

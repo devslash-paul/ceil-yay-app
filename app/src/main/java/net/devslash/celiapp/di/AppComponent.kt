@@ -8,10 +8,10 @@ import net.devslash.celiapp.App
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = arrayOf(
-        AndroidInjectionModule::class,
-        AppModule::class,
-        ActivityBuilder::class))
+@Component(modules = [
+    AndroidInjectionModule::class,
+    AppModule::class,
+    ActivityBuilder::class])
 interface AppComponent {
 
     @Component.Builder
